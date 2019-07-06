@@ -31,22 +31,24 @@ a {
 }
 
 h5 {
-  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: .7em;
   text-align: center;
 }
 
+h5, 
+.main-nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4, 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .main-header {
   text-align: center;
-}
-
-.main-nav {
-  font-family: 'Raleway', sans-serif;
 }
 
 .main-nav li {
@@ -68,14 +70,40 @@ p {
 
 .profile img {
   display: block;
-  width: 50%;
+  width: 60%;
   margin: 30px auto 15px auto;
 }
 
 .profile p {
   padding: 10px 20px;
-  text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-weight: 300;
   color: grey;
+}
+
+.col img {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 90%;
+}
+
+.col h4 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.col p {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: grey;
+  padding: 0 15px
+}
+
+/* **********  container classes ********** */
+
+.wrapper {
+  background: white;
+  padding-top: 15px;
+  padding-bottom: 35px;
 }
 

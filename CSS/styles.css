@@ -35,7 +35,7 @@ h5 {
 
 h5,
 h3,
-.main-nav,
+nav,
 .top-reference {
   font-family: 'Raleway', sans-serif;
 }
@@ -58,7 +58,7 @@ p {
   background-color: white;
 }
 
-.main-nav a:hover {
+a:hover {
   color: lightgrey;
 }
 
@@ -82,6 +82,10 @@ p {
   color: grey;
 }
 
+#portfolio {
+  margin-bottom: 3em
+}
+
 .col {
   padding: 0 15px;
 }
@@ -95,8 +99,8 @@ p {
   font-size: 0.8em;
   font-weight: 300;
   color: grey;
-  padding: 0 15px; 
-  margin: .5em 0 2.3em;
+  padding: 2% 10% 9%; 
+  margin: 0;
 }
 
 #contact {
@@ -112,6 +116,10 @@ p {
   padding: 0 8px;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 .main-footer {
   border-top: solid 1px lightgrey;
   margin: 0 15px;
@@ -123,7 +131,14 @@ p {
   font-size: .7em;
 }
 
-.main-footer nav {
+.footer-nav a {
+  font-size: .6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.footer-nav {
   display: none;
 }
 
@@ -138,8 +153,6 @@ p {
   float: right;
 }
 
-/* **********  container classes ********** */
-
 .wrapper {
   background: white;
   padding-top: 15px;
@@ -149,8 +162,15 @@ p {
 /* **********  media queries ********** */
 
 @media (min-width: 768px) {
+
+  .container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
   
-  .main-nav li {
+  .main-nav li,
+  .footer-nav li {
     display: inline-block;
   }
   
@@ -187,8 +207,52 @@ p {
     padding: 0 5px;
   }
 
-  .col p {
-    padding: 0 45px; 
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .photo-gallery,
+  .calculator {
+    width: 50%;
+    height: 340px;
+  }
+
+  .contact-info {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-nav {
+    display: unset;
+    float: right;
+    margin: 13px 0 20px;
+  }
+
+  .footer-nav li {
+    margin-left: 5px;
+  }
+
+  .top-reference {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: 95%;
+    max-width: 1150px;
+    padding-top: 1.2em;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    margin-top: 15px;
   }
 
   .marketing,
@@ -197,20 +261,15 @@ p {
   .map,
   .photo-gallery,
   .calculator {
-    width: 50%;
+    width: 33%;
   }
 
-
-  /* .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  } */
-
+  .contact-info {
+    max-width: 40%;
+  }
 }
 
-
-
-/* **********  Clearfix ********** */
+/* **********  clearfix ********** */
 
 .clearfix::after {
   content: "";
